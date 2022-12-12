@@ -1,0 +1,43 @@
+.page-layout-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+.header,.footer,.left-panel,.right-panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background-color: white;
+}
+
+.content{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.page-sample{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    overflow: scroll;
+}
+
+.flex-column, .flex-row{
+    display: flex;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.flex-column{
+    flex-direction: column;
+}

@@ -1,0 +1,265 @@
+:root{
+    --primary:#00000033;
+    --secondary1:#393939;
+    --secondary:#aaa;
+    --tertiary:#cecece;
+    --active:white;
+    --passive:black
+}
+
+
+.product-container{
+    gap: 20px;
+}
+
+.slider{
+    cursor: pointer;
+    align-items: center;
+}
+
+.image{
+    border-radius: 8px;
+    border-style: hidden;
+    position: absolute;
+}
+
+.icon-button{
+    transition:all .1s ease-in-out;
+    cursor: pointer;
+    background-color: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.icon-button:hover{
+    transform: scale(1.5);
+}
+
+.slider-navigator{
+    margin-top: auto;
+    background: var(--primary);
+    width: min-content;
+    height: min-content;
+    padding: 3px 10px;
+    border-style: hidden;
+    cursor: default;
+    z-index: 1;
+}
+
+.slider-navigator-element{
+    transition: all .1s ease-in-out;
+    background-color: var(--secondary);
+    border-radius: 50%;
+}
+.slider-navigator-element:not(.active){
+    cursor: pointer;
+}
+
+.slider-navigator-element:not(.active):hover{
+    background-color: var(--active);
+    transform: scale(1.5);
+}
+
+.slider-navigator-element.active{
+    background-color: var(--active);
+    transform: scale(1.5);
+    cursor: default;
+}
+
+.bread-crumb{
+    height: min-content;
+    overflow: scroll;
+}
+
+.bread-crumb-container{
+    width: max-content;
+    max-height: 20px;
+    display: flex;
+    padding-bottom: 20px;
+
+}
+
+.breadcrumb-element-container{
+    margin-bottom: auto;
+    margin-top: auto;
+    display: flex;
+}
+
+.non-selectable{
+    user-select: none;
+}
+
+.breadcrumb-element{
+    transition: all .1s ease-in-out;
+    font-size: 14px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+.breadcrumb-element:hover{
+    color: var(--secondary);
+}
+
+.product-badges{
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.seller-panel{
+    transition: all .3s;
+    width: fit-content;
+    cursor: pointer;
+    border-width: 2;
+    border-style: solid;
+    border-color: var(--tertiary);
+}
+.seller-panel:hover{
+    background-color: var(--primary)
+}
+
+.card-view {
+    width: fit-content;
+    border-radius: 4px;
+    padding: 2px 4px;
+}
+.rating-card{
+    padding: unset !important;
+}
+.seller-name-area{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.seller-name{
+    color:var(--secondary1);
+    font-weight: bold;
+}
+
+.product-details-container{
+    gap: 5px;
+}
+
+.product-information-container{
+    padding:0px 15px;
+}
+
+.product-header{
+    font-size: 30px;
+    color: var(--passive);
+}
+
+.seller-details-container{
+    border-width: 1px;
+    border-style: solid;
+    width: fit-content;
+    border-radius: 4px;
+    padding: 2px 10px;
+    border-color: var(--tertiary);
+}
+
+.price-detail-item{
+    padding-left: 10px;
+}
+
+.price{
+    padding-left: unset;
+}
+
+
+.instalment,.money-refund{
+    text-decoration: underline;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+    height: 4px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--passive);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--passive);
+}
+
+.modal-wrapper{
+    position: absolute;
+    background-color: #cecece44;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content-container{
+    background: var(--active);
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 400px;
+}
+
+.modal-header{
+    background-color: var(--secondary);
+    font-weight: bold;
+    min-width: 200px;
+}
+
+.modal-content,.modal-header{
+    padding: 2px 10px;
+}
+
+.preview-page{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.preview-header{
+    font-size: 50px;
+}
+
+.preview-container{
+    gap: 20px;
+}
+
+.preview-item{
+    transition: all .3s;
+    width: min-content;
+    padding: 10px;
+    background-color: var(--secondary);
+    border-radius: 12px;
+    cursor: pointer;
+    
+}
+
+.preview-item:hover{
+    transform: scale(1.1);
+    background-color: var(--tertiary);       
+}
+
+.buy-button{
+    transition: all .3s ease-in-out;
+}
+.buy-button:hover{
+    background-color: var(--tertiary)!important;
+    color: var(--passive) !important;
+    transform: scale(1.1);
+}
+
+.action-container{
+    gap: 10px;
+    padding-top: 10px;
+}
+
+
+
+
