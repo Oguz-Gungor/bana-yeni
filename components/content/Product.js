@@ -2,7 +2,7 @@ import { useState } from "react";
 import ActionPanel from "./ActionPanel";
 import Breadcrumb from "./BreadCrumb";
 import PriceDetails from "./PriceDetails";
-import ProductDetails, { sellerInformationModal } from "./ProductDetails";
+import ProductDetails from "./ProductDetails";
 import Slider from "./Slider";
 
 export default function Product(props) {

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import CardView from "./cardView";
+import CardView from "./CardView";
 
 export default function ProductDetails({
   itemName,

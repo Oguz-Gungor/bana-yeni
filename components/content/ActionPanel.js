@@ -1,5 +1,4 @@
-import Image from "next/image";
-import CardView from "./cardView";
+import CardView from "./CardView";
 import IconWrapper from "./IconWrapper";
 
 export default function ActionPanel({ elementSize }) {
